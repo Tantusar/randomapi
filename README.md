@@ -20,8 +20,7 @@ Features
 Requirements
 ------------
 
-- Python 2.6 or higher
-- Python 3.6 or higher
+- Python 2.6 or higher, or 3.6 or higher
 - An API key from: http://api.random.org
 
 Example Usage
