@@ -10,7 +10,7 @@ Maintainer: Thomas Chick (twitter.com/Tantusar)
 https://github.com/tantusar/randomapi
 
 Date: January 18, 2020
-Version: 0.3
+Version: 0.3.1
 
 RANDOM.org API reference:
 - https://api.random.org/json-rpc/2/

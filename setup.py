@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name = 'randomapi',
-    version = '0.3',
+    version = '0.3.1',
     description = 'RANDOM.org JSON-RPC API implementation',
     long_description = long_description,
     long_description_content_type = 'text/markdown',
@@ -20,9 +20,10 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
     ],
-    python_requires = '>=3.6',
-    download_url = 'https://github.com/Tantusar/randomapi/archive/v0.3.tar.gz'
+    python_requires = '>=2.6', '!=3.0.*', '!=3.1.*', '!=3.2.*', '!=3.3.*', '!=3.4.*', '!=3.5.*', '>=3.6',
+    download_url = 'https://github.com/Tantusar/randomapi/archive/v0.3.1.tar.gz'
 )
