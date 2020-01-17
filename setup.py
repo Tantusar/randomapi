@@ -10,7 +10,7 @@ setup(
     long_description = long_description,
     long_description_content_type = 'text/markdown',
     author = 'Mitchell Cohen <mitch.cohen@me.com>',
-    author_email = 'mitch.cohen@me.com'
+    author_email = 'mitch.cohen@me.com',
     maintainer = 'Thomas Chick (twitter.com/Tantusar)',
     py_modules = ['randomapi'],
     url = 'https://github.com/Tantusar/randomapi',
