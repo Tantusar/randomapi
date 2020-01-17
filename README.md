@@ -1,6 +1,8 @@
 randomapi
 =========
 
+[![PyPI version](https://badge.fury.io/py/randomapi.svg)](https://badge.fury.io/py/randomapi)
+
 Python implementation of the RANDOM.org JSON-RPC API:
 http://api.random.org/json-rpc/2/
 
