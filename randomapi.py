@@ -10,7 +10,7 @@ Maintainer: Thomas Chick (twitter.com/Tantusar)
 https://github.com/tantusar/randomapi
 
 Date: January 18, 2020
-Version: 0.2
+Version: 0.3
 
 RANDOM.org API reference:
 - https://api.random.org/json-rpc/2/
@@ -34,7 +34,17 @@ Example usage:
 import time
 import json
 import logging
-import urllib.request, urllib.error, urllib.parse
+
+# Python 2/3 Compatibility
+try:
+    from urllib.request import urlopen, Request
+    from urllib.error import HTTPError
+    from urllib.parse import urlparse, urlencode
+except ImportError:
+    from urlparse import urlparse
+    from urllib import urlencode
+    from urllib2 import urlopen, Request, HTTPError
+
 import uuid
 from collections import OrderedDict
 
@@ -150,9 +160,9 @@ def http_request(url, json_string):
     :param json_string: JSON-String
     """
 
-    request = urllib.request.Request(url, data=json_string)
+    request = Request(url, data=json_string)
     request.add_header("Content-Type", "application/json")
-    response = urllib.request.urlopen(request)
+    response = urlopen(request)
     response_string = response.read()
     response.close()
 
