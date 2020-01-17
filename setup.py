@@ -9,9 +9,9 @@ setup(
     description = 'RANDOM.org JSON-RPC API implementation',
     long_description = long_description,
     long_description_content_type = 'text/markdown',
-    author = 'Mitchell Cohen <mitch.cohen@me.com>'
+    author = 'Mitchell Cohen <mitch.cohen@me.com>',
     author_email = 'mitch.cohen@me.com'
-    maintainer = 'Thomas Chick (twitter.com/Tantusar)'
+    maintainer = 'Thomas Chick (twitter.com/Tantusar)',
     py_modules = ['randomapi'],
     url = 'https://github.com/Tantusar/randomapi',
     license = 'MIT License',
@@ -23,6 +23,6 @@ setup(
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
     ],
-    python_requires = '>=3.6'
+    python_requires = '>=3.6',
     download_url = 'https://github.com/Tantusar/randomapi/archive/v0.2.tar.gz'
 )
