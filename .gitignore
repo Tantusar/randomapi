@@ -1,1 +1,3 @@
 **/__pycache__
+**/dist
+**/randomapi.egg-info
