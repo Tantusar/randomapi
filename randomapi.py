@@ -10,7 +10,7 @@ Maintainer: Thomas Chick (twitter.com/Tantusar)
 https://github.com/tantusar/randomapi
 
 Date: January 18, 2020
-Version: 0.3.1
+Version: 0.3.2
 
 RANDOM.org API reference:
 - https://api.random.org/json-rpc/2/
@@ -217,7 +217,6 @@ class RandomJSONRPC:
         response = RandomJSONResponse(json_to_ordered_dict(json_string), method)
         if ADVISORY_DELAY in response._result:
             self._advisory_delay = float(response._result[ADVISORY_DELAY]) / 1000.0
-        response.method = method
         return response
 
 ####################### RANDOM.org API methods ##########################
@@ -280,8 +279,7 @@ class RandomJSONRPC:
         API key.'''
         request_string = compose_api_call(
             USAGE_METHOD, apiKey=self.api_key)
-        self.send_request(request_string, USAGE_METHOD)
-        return self._result
+        return self.send_request(request_string, USAGE_METHOD)
 
 ####################### Digitally-signed API methods ##########################
 
